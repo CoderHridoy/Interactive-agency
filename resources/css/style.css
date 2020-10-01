@@ -1,0 +1,491 @@
+/*=====================================
+    Template Name: Interactive Agency- An Awesome portfolio Template
+    Template URI :
+    Description  : An Awesome Portfolio Template
+    Author : Kamrul
+    Author URI: kamrul.me
+    Suppot: kamrulhassanhridoy99@gmail.com
+    Version :1.0
+=====================================*/
+
+/*===================================
+    
+    CSS INDEX
+    =========
+    1.COMMON CSS
+    2.HEADER
+    3.PORTFOLIO
+    4.OFFER
+    5.ABOUT US
+    6.MAP
+    7.FOOTER
+    
+
+===================================*/
+
+/*=====================================
+
+    1.COMMON CSS
+
+=====================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&family=Roboto:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: 'Fira Sans', sans-serif !important;
+    font-weight: 400;
+    font-size: 10px;
+    text-rendering: optimizeLegibility;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+/* REUSEABLE COMPONENTS */
+
+.row {
+    max-width: 1170px;
+    margin: auto;
+}
+
+section {
+    padding: 60px 0;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+input.price {
+    padding: 10px 40px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to right, rgb(190, 4, 175) ,rgb(250, 4, 98));
+    font-size: 180%;
+    color: #fff;
+}
+
+h1,h2,h4,h5 {
+    line-height: 1.5;
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif; 
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+ 
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/*=====================================
+
+    2.HEADER
+
+=====================================*/
+
+#home {
+    height: 100vh;
+    background: url(img/header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+/* MAIN NAVIGATION */
+
+.navigation-bar {
+    padding: 40px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo h2 {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 360%;
+    color: #030303;
+}
+
+.logo h2:last-child {
+    font-weight: 300;
+}
+
+.main-nav {
+    display: inline-block;
+    margin-left: 286px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li:nth-child(1) {
+    margin-left: 0;
+}
+
+.main-nav li a {
+    font-size: 180%;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #030303;
+    position: relative;
+    transition: 0.5s;
+}
+
+.main-nav li a::before {
+    content: '';
+    height: 5px;
+    width: 0;
+    background: #A1DB6A;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    transition: 0.3s;
+}
+
+.main-nav li:hover a::before {
+    width: 100%;
+}
+
+.main-nav li:hover:last-child a::before {
+    width: 0;
+}
+
+input.contact {
+    font-size: 180%;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #030303;
+    padding: 10px 20px;
+    outline: none;
+    border: 0;
+    border-radius: 20px;
+}
+
+.header-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -40%, -50%);
+}
+
+.header-title h1 {
+    font-size: 480%;
+    font-weight: 700;
+    display: inline-block;
+    margin: 0;
+    color: #000;
+}
+
+.header-title p {
+    font-size: 180%;
+    letter-spacing: -0.5px;
+    display: inline-block;
+    margin-left: 35px;
+    color: rgb(228, 226, 226);
+}
+
+/* STICKY NAVIGATION */
+
+.uk-active {
+    background: linear-gradient(to right, rgb(190, 4, 175) ,rgb(250, 4, 98));
+}
+
+.uk-active .navigation-bar {
+    padding: 20px 0;
+}
+
+.uk-active h2,
+.uk-active li a {
+    color: #fff;
+}
+
+.uk-active .main-nav li a::before {
+    width: 0;
+}
+
+/* HAMBURGER MENU */
+
+.nav-icon {
+    color: #000;
+    display: none;
+}
+
+.nav-icon:hover {
+    color: #000;
+}
+
+.uk-active .nav-icon {
+    color: #fff;
+}
+
+.nav-icon i {
+    font-size: 400%;
+    border: 1px solid #000;
+    padding: 5px;
+}
+
+.uk-active .nav-icon i {
+    border: 1px solid #fff;
+}
+
+.menu-container {
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: none;
+    transition: 0.5s;
+}
+
+.close-btn i {
+    position: absolute;
+    top: 45px;
+    right: 45px;
+    color: #fff;
+    font-size: 400%;
+    border: 1px solid #fff;
+    padding: 5px;
+}
+
+.close-btn i:hover {
+    cursor: pointer;
+}
+
+.menu-item {
+    text-align: center;
+    position: relative;
+    top: 15%;
+    left: 0;
+    width: 100%;
+}
+
+.menu-item ul li {
+    margin: 10px 0;
+}
+
+.menu-item ul li a {
+    color: #fff !important;
+    font-size: 300%;
+    transition: 0.3s;
+    display: block;
+    text-transform: uppercase;
+}
+
+/*=====================================
+
+    3.PORTFOLIO
+
+=====================================*/
+
+#portfolio {
+    background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)),url(img/portfolio.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+.grid-portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 100px;
+}
+
+.grid-portfolio-item h2 {
+    font-size: 360%;
+    display: inline-block;
+    color: #fff;
+}
+
+.grid-portfolio-item h2:first-child {
+    font-weight: 300;
+}
+
+.grid-portfolio-item p {
+    font-size: 180%;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+/*=====================================
+
+    4.OFFER
+
+=====================================*/
+
+#offer {
+    position: relative;
+    padding-bottom: 120px;
+}
+
+#offer h2 {
+    font-size: 360%;
+    font-weight: 700;
+    text-align: center;
+}
+
+.grid-offer-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 150px;
+    grid-gap: 80px;
+    margin-top: 80px;
+}
+
+.grid-offer-item h3 {
+    font-size: 250%;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.grid-offer-item p {
+    font-size: 180%;
+    font-weight: 300;
+    color: rgb(144, 143, 143);
+    text-align: justify;
+}
+
+.grid-offer-item i {
+    font-size: 800%;
+}
+
+.offer-logo {
+    float: left;
+    width: 20%;
+}
+
+.offer-description {
+    float: left;
+    width: 80%;
+}
+
+#offer input {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translate( -40%, -50%);
+    padding: 10px 80px;
+}
+
+/*=====================================
+
+    5.ABOUT US
+
+=====================================*/
+
+#about-us {
+    background: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.9)),url(img/office.jpg) no-repeat center / cover;
+    color: #fff;
+    position: relative;
+    padding-bottom: 120px;
+}
+
+#about-us .section-title {
+    font-size: 360%;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+}
+
+#about-us .section-description {
+    font-size: 180%;
+    font-weight: 300;
+    text-align: center;
+}
+
+.grid-about-us-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 60px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.item-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.item-title h5 {
+    font-size: 240%;
+    font-weight: 700;
+    margin: 15px 0;
+    color: #fff;
+}
+
+.item-description p {
+    font-size: 180%;
+    font-weight: 300;
+    color: rgb(230, 221, 221);
+}
+
+#about-us input {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate( -40%, -50%);
+    padding: 10px 80px;
+}
+
+/*=====================================
+
+    6.MAP
+
+=====================================*/
+
+section#map {
+    padding: 0;
+}
+
+section iframe {
+    width: 100%;
+    height: 80vh;
+}
+
+/*=====================================
+
+    7.FOOTER
+
+=====================================*/
+
+footer {
+    padding: 30px 0;
+}
+
+footer p {
+    text-align: center;
+    font-size: 180%;
+    color: rgb(206, 198, 198);
+}
+
+footer p:first-child {
+    font-weight: 300;
+}
+
+footer p:last-child {
+    font-weight: 700;
+}
+

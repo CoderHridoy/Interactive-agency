@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--REQUIRED META TAGS-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--TITLE-->
+    <title>Interactive Agency</title>
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="resources/img/favicon.png" type="image/x-icon">
+    <!--CSS FILES-->
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    <link rel="stylesheet" href="vendors/css/all.min.css">
+    <link rel="stylesheet" href="vendors/css/fontawesome.min.css">
+    <link rel="stylesheet" href="vendors/css/uikit.min.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/responsive.css">
+</head>
+
+<body>
+    <!--START HEADER SECTION-->
+    <header id="home">
+        <nav  uk-sticky="top: 600; animation: uk-animation-slide-top;">
+            <div class="row">
+                <div class="navigation-bar">
+                    <a href="#header" class="logo">
+                        <h2>Interactive</h2>
+                        <h2>Agency</h2>
+                    </a>
+                    <a class="nav-icon" onclick="openMenu()">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    <ul class="main-nav">
+                        <li><a href="#home">home</a></li>
+                        <li><a href="#about-us">about us</a></li>
+                        <li><a href="#offer">offer</a></li>
+                        <li><a href="#portfolio">portfolio</a></li>
+                        <li><input type="submit" value="Contact" class="contact"></li>
+                    </ul>
+                </div>
+            </div>
+             <!--START HAMBURGER MENU-->
+             <div class="menu-container" id="navbar" onclick="closeMenu()">
+                <div class="close-btn" onclick="closeMenu()">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="menu-item">
+                    <ul>
+                        <li><a href="#home">home</a></li>
+                        <li><a href="#about-us">about us</a></li>
+                        <li><a href="#offer">offer</a></li>
+                        <li><a href="#portfolio">portfolio</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--END HAMBURGER MENU-->
+        </nav>
+        <div class="row">
+            <div class="header-title">
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, eius!</p>
+            </div>
+        </div>
+    </header>
+    <!--END HEADER SECTION-->
+    <!--START PORTFOLIO SECTION-->
+    <section id="portfolio">
+        <div class="row">
+            <div class="grid-portfolio-container">
+                <div class="grid-portfolio-item">
+                    <h2>Best</h2>
+                    <h2>Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea natus, quam quo perferendis eum
+                        molestiae dolor impedit iure, accusantium nesciunt repudiandae reprehenderit molestias magnam
+                        voluptates ratione qui nisi illo officiis.</p>
+                    <input type="submit" value="Ask for price" class="price">
+                </div>
+                <div class="grid-portfolio-item">
+                    <h2>Best</h2>
+                    <h2>Code</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea natus, quam quo perferendis eum
+                        molestiae dolor impedit iure, accusantium nesciunt repudiandae reprehenderit molestias magnam
+                        voluptates ratione qui nisi illo officiis.</p>
+                    <input type="submit" value="Ask for price" class="price">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END PORTFOLIO SECTION-->
+    <!--START OFFER SECTION-->
+    <section id="offer">
+        <div class="row">
+            <h2>What We Do?</h2>
+            <div class="grid-offer-container">
+                <div class="grid-offer-item">
+                    <div class="offer-logo">
+                        <i class="fab fa-gg-circle"></i>
+                    </div>
+                    <div class="offer-description">
+                        <h3>Web Design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ipsa suscipit ipsum pariatur
+                            sunt tempore.</p>
+                    </div>
+                </div>
+                <div class="grid-offer-item">
+                    <div class="offer-logo">
+                        <i class="fab fa-gg-circle"></i>
+                    </div>
+                    <div class="offer-description">
+                        <h3>Web Application</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ipsa suscipit ipsum pariatur
+                            sunt tempore.</p>
+                    </div>
+                </div>
+                <div class="grid-offer-item">
+                    <div class="offer-logo">
+                        <i class="fab fa-gg-circle"></i>
+                    </div>
+                    <div class="offer-description">
+                        <h3>Digital Painting</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ipsa suscipit ipsum pariatur
+                            sunt tempore.</p>
+                    </div>
+                </div>
+                <div class="grid-offer-item">
+                    <div class="offer-logo">
+                        <i class="fab fa-gg-circle"></i>
+                    </div>
+                    <div class="offer-description">
+                        <h3>Desktop Applications</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ipsa suscipit ipsum pariatur
+                            sunt tempore.</p>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" value="Ask Price" class="price">
+        </div>
+    </section>
+    <!--END OFFER SECTION-->
+    <!--START ABOUT US SECTION-->
+    <section id="about-us">
+        <div class="row">
+            <h2 class="section-title">About us!</h2>
+            <p class="section-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, in?</p>
+            <div class="grid-about-us-container">
+                <div class="grid-about-us-item">
+                    <div class="item-img">
+                        <img src="resources/img/img1.jpg" alt="Seller">
+                    </div>
+                    <div class="item-title">
+                        <h5>Jhon Doe</h5>
+                    </div>
+                    <div class="item-description">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="grid-about-us-item">
+                    <div class="item-img">
+                        <img src="resources/img/img2.jpg" alt="Seller">
+                    </div>
+                    <div class="item-title">
+                        <h5>Jhon Doe</h5>
+                    </div>
+                    <div class="item-description">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="grid-about-us-item">
+                    <div class="item-img">
+                        <img src="resources/img/img3.jpg" alt="Seller">
+                    </div>
+                    <div class="item-title">
+                        <h5>Jhon Doe</h5>
+                    </div>
+                    <div class="item-description">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="grid-about-us-item">
+                    <div class="item-img">
+                        <img src="resources/img/img4.jpg" alt="Seller">
+                    </div>
+                    <div class="item-title">
+                        <h5>Jhon Doe</h5>
+                    </div>
+                    <div class="item-description">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" value="Watch more" class="price">
+        </div>
+    </section>
+    <!--START MAP SECTION-->
+    <section id="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.27988647175!2d-74.25986673512958!3d40.697670068477386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1601108792938!5m2!1sen!2sbd"
+            width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+    </section>
+    <!--END MAP SECTION-->
+    <!--START FOOTER SECTION-->
+    <footer>
+        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculusmus.</p>
+        <p>Try awsome tool for desgners symu.co</p>
+    </footer>
+    <!--END FOOTER SECTION-->
+    <!--JS SCRIPTS-->
+    <script src="vendors/js/jquery-3.5.1.min.js"></script>
+    <script src="vendors/js/uikit.min.js"></script>
+    <script src="vendors/js/uikit-icons.min.js"></script>
+    <script src="resources/js/script.js"></script>
+</body>
+
+</html>

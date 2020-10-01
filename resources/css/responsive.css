@@ -1,0 +1,302 @@
+@media (min-width: 1170px) and (max-width: 1300px) {
+    #home {
+        height: 80vh;
+    }
+    .header-title h1 {
+        font-size: 457%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1169.98px) {
+    #home {
+        height: 80vh;
+    }
+    .row {
+        width: 90%;
+        margin: auto;
+    }
+
+    .navigation-bar {
+        overflow: hidden;
+    }
+
+    .logo {
+        display: block;
+        float: left;
+    }
+
+    .main-nav {
+        display: block;
+        float: right;
+        margin-left: 0;
+    }
+
+    .header-title {
+        width: 80%;
+        margin: auto;
+        transform: translate(-35%, -50%);
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .row {
+        width: 90%;
+        margin: auto;
+    }
+
+    #home {
+        height: 80vh;
+    }
+
+    .navigation-bar {
+        overflow: hidden;
+    }
+
+    .logo {
+        display: block;
+        float: left;
+    }
+
+    .logo h2 {
+        font-size: 260%;
+    }
+
+    .main-nav {
+        display: block;
+        float: right;
+        margin-left: 0;
+    }
+
+    .main-nav li {
+        margin-left: 20px;
+    }
+
+    .main-nav li:first-child {
+        margin-left: 0;
+    }
+
+    .header-title {
+        width: 80%;
+        margin: auto;
+        transform: translate(-42%, -50%);
+    }
+
+    .grid-offer-item i {
+        font-size: 600%;
+    }
+
+    .grid-about-us-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section iframe {
+        height: 60vh;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    body {
+        font-size: 8px;
+    }
+
+    .row {
+        width: 90%;
+        margin: auto;
+    }
+
+    #home {
+        height: 50vh;
+    }
+
+    .navigation-bar {
+        overflow: hidden;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .nav-icon {
+        display: block;
+        float: right;
+    }
+
+    .menu-container {
+        display: block;
+    }
+
+    .header-title {
+        width: 100%;
+        top: 70%;
+        left: 65%;
+        transform: translate(-53%, -300%);
+    }
+
+    .grid-portfolio-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .grid-offer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-about-us-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section iframe {
+        height: 40vh;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 575.98px) {
+    .row {
+        width: 90%;
+        margin: auto;
+    }
+
+    #home {
+        height: 50vh;
+    }
+
+    .navigation-bar {
+        overflow: hidden;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .nav-icon {
+        display: block;
+        float: right;
+    }
+
+    .menu-container {
+        display: block;
+    }
+
+    .header-title {
+        width: 100%;
+        top: 40%;
+        left: 65%;
+        transform: translate(-56%, -300%);
+    }
+
+    .header-title h1 {
+        font-size: 330%;
+    }
+
+    .header-title p {
+        font-size: 120%;
+    }
+
+    .grid-portfolio-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .grid-offer-container {
+        grid-template-columns: 1fr;
+    }
+
+    #offer input {
+        bottom: 1%;
+    }
+
+    .grid-about-us-container {
+        grid-template-columns: 1fr;
+    }
+
+    section iframe {
+        height: 40vh;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 479.98px) {
+    .row {
+        width: 90%;
+        margin: auto;
+    }
+
+    #home {
+        height: 40vh;
+    }
+
+    .navigation-bar {
+        overflow: hidden;
+    }
+
+    .logo h2 {
+        font-size: 250%;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .nav-icon {
+        display: block;
+        float: right;
+    }
+
+    .menu-container {
+        display: block;
+    }
+
+    .header-title {
+        width: 100%;
+        top: 35%;
+        left: 63%;
+        transform: translate(-56%, -300%);
+    }
+
+    .header-title h1 {
+        font-size: 225%;
+    }
+
+    .header-title p {
+        font-size: 100%;
+        margin-left: 5px;
+    }
+
+    .grid-portfolio-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .grid-offer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .offer-logo,
+    .offer-description {
+        float: none;
+        width: 100%;
+    }
+
+    #offer input {
+        bottom: 1%;
+        transform: translateX(-47%);
+    }
+
+    .grid-about-us-container {
+        grid-template-columns: 1fr;
+    }
+
+    #about-us input {
+        transform: translateX(-47%);
+        bottom: 1%;
+    }
+
+    section iframe {
+        height: 40vh;
+    }
+
+    footer p {
+        font-size: 140%;
+    }
+}
